@@ -4,6 +4,11 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	crossorigin="anonymous">
 <script type="text/javascript"
 	src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script type="text/javascript">
@@ -40,27 +45,29 @@
 </style>
 </head>
 <body>
-	<center>
-		<form id="fileUploadForm" method="post" action="uploadFile"
-			enctype="multipart/form-data">
-			<table id="fileUploadFormBeanTable" border="0" width="80%">
-				<tr>
-					<td>Act:</td>
-					<td><input id="actId" type="text" name="actId" size="65" /></td>
-				</tr>
-				<tr>
-					<td>Attachment:</td>
-					<td><input id="pickUpFileAttachment" type="file"
-						name="attachFileObj" size="60" multiple="multiple" /> <span
-						id="fileUploadErr">Please Upload A File!</span></td>
-				</tr>
-				<tr>
-					<td colspan="2" align="center"><input id="fileUploadBtn"
-						type="submit" value="Upload" /></td>
-				</tr>
-			</table>
-		</form>
-	</center>
+	<div class="container">
+		<div class="col-md-8 col-md-offset-2">
+			<form id="fileUploadForm" method="post" action="uploadFile"
+				enctype="multipart/form-data">
+				<table id="fileUploadFormBeanTable" border="0" width="80%" class="table">
+					<tr>
+						<td>Act:</td>
+						<td><input id="actId" type="text" name="actId" size="65" /></td>
+					</tr>
+					<tr>
+						<td>Attachment:</td>
+						<td><input id="pickUpFileAttachment" type="file"
+							name="attachFileObj" size="60" multiple="multiple" /> <span
+							id="fileUploadErr">Please Upload A File!</span></td>
+					</tr>
+					<tr>
+						<td colspan="2" align="center"><input id="fileUploadBtn"
+							type="submit" value="Upload" class="btn btn-primary"/></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</div>
 </body>
 </html>
 
